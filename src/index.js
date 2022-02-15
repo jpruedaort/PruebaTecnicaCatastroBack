@@ -17,7 +17,7 @@ app.use(function (req, res, next) {
 app.use(
   postgraphile(
     process.env.DATABASE_URL ||
-      "postgres://postgres:password@localhost/catastrodb",
+      "postgres://postgres:password@localhost/catastroenhanced",
     "public",
     {
       appendPlugins: [PgManyToManyPlugin],
